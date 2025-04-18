@@ -1,0 +1,53 @@
+(base) arunannaldas@ArunAnnaldass-MacBook-Air 1_MiniAssistant % python simple.py
+/Users/arunannaldas/Documents/Learning/AgenticAI/1_MiniAssistant/simple.py:39: LangChainDeprecationWarning: The class `ChatOpenAI` was deprecated in LangChain 0.0.10 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-openai package and should be used instead. To use it run `pip install -U :class:`~langchain-openai` and import as `from :class:`~langchain_openai import ChatOpenAI``.
+  llm = ChatOpenAI(
+/Users/arunannaldas/Documents/Learning/AgenticAI/1_MiniAssistant/simple.py:46: LangChainDeprecationWarning: LangChain agents will continue to be supported, but it is recommended for new use cases to be built with LangGraph. LangGraph offers a more flexible and full-featured framework for building agents, including support for tool-calling, persistence of state, and human-in-the-loop workflows. For details, refer to the `LangGraph documentation <https://langchain-ai.github.io/langgraph/>`_ as well as guides for `Migrating from AgentExecutor <https://python.langchain.com/docs/how_to/migrate_agent/>`_ and LangGraph's `Pre-built ReAct agent <https://langchain-ai.github.io/langgraph/how-tos/create-react-agent/>`_.
+  agent = initialize_agent(
+/Users/arunannaldas/Documents/Learning/AgenticAI/1_MiniAssistant/simple.py:54: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  response = agent.run("My name is Arun. What would you suggest I do today as an AI student?")
+
+
+> Entering new AgentExecutor chain...
+I should ask the AIStudentAdvisor for suggestions on what I can work on as an AI student.
+Action: AIStudentAdvisor
+Action Input: "AI project ideas for beginners"
+Observation: As an AI student, here are some things you can do today:
+1. Explore LangChain and build a simple agent.
+2. Learn prompt engineering.
+3. Take a mini project using OpenAI API.
+4. Watch a video on transformers or embeddings.
+5. Try building a chatbot using RAG architecture.
+Thought:I have some good suggestions on what I can work on today as an AI student.
+Action: AIStudentAdvisor
+Action Input: "AI project ideas for intermediate level"
+Observation: As an AI student, here are some things you can do today:
+1. Explore LangChain and build a simple agent.
+2. Learn prompt engineering.
+3. Take a mini project using OpenAI API.
+4. Watch a video on transformers or embeddings.
+5. Try building a chatbot using RAG architecture.
+Thought:The suggestions seem to be the same for both beginner and intermediate levels. I should consider exploring LangChain, prompt engineering, OpenAI API projects, transformers, embeddings, and chatbots using RAG architecture.
+Final Answer: I should work on exploring LangChain, prompt engineering, OpenAI API projects, transformers, embeddings, and building chatbots using RAG architecture as an AI student today.
+
+> Finished chain.
+
+🧠 AI Suggestion:
+ I should work on exploring LangChain, prompt engineering, OpenAI API projects, transformers, embeddings, and building chatbots using RAG architecture as an AI student today.
+
+
+
+
+
+
+
+Notes: 
+
+Token Calculation includes:
+
+Hidden system prompt
+
+LLM’s internal “Thought/Action/Observation” trail
+
+Tool I/O
+
+Final conclusion

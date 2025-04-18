@@ -1,0 +1,19 @@
+/Users/arunannaldas/Documents/Learning/AgenticAI/1_MiniAssistant/simple.py:41: LangChainDeprecationWarning: The class `ChatOpenAI` was deprecated in LangChain 0.0.10 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-openai package and should be used instead. To use it run `pip install -U :class:`~langchain-openai` and import as `from :class:`~langchain_openai import ChatOpenAI``.
+  llm = ChatOpenAI(
+/Users/arunannaldas/Documents/Learning/AgenticAI/1_MiniAssistant/simple.py:48: LangChainDeprecationWarning: LangChain agents will continue to be supported, but it is recommended for new use cases to be built with LangGraph. LangGraph offers a more flexible and full-featured framework for building agents, including support for tool-calling, persistence of state, and human-in-the-loop workflows. For details, refer to the `LangGraph documentation <https://langchain-ai.github.io/langgraph/>`_ as well as guides for `Migrating from AgentExecutor <https://python.langchain.com/docs/how_to/migrate_agent/>`_ and LangGraph's `Pre-built ReAct agent <https://langchain-ai.github.io/langgraph/how-tos/create-react-agent/>`_.
+  agent = initialize_agent(
+/Users/arunannaldas/Documents/Learning/AgenticAI/1_MiniAssistant/simple.py:57: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  response = agent.run("I want to calculate output of 2+2")
+
+
+> Entering new AgentExecutor chain...
+I should use the Calculator tool to evaluate the math expression.
+Action: Calculator
+Action Input: '2 + 2'
+Observation: 2 + 2
+
+
+> Finished chain.
+
+ AI Suggestion:
+ 2 + 2
